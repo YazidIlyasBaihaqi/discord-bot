@@ -18,7 +18,7 @@ module.exports = class GuildMemberAddEvent extends BaseEvent {
   }
   
   async run(client, member) {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name == 'welcome');
+    const welcomeChannel = member.guild.channels.cache.get('843377572254449706');
     const canvas = Canvas.createCanvas(1024, 500);
     const context = canvas.getContext('2d');
     const background = await Canvas.loadImage('./src/img/wallpaper.png');
