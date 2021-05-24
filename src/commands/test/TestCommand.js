@@ -17,7 +17,6 @@ module.exports = class TestCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-    const welcomeChannel = message.guild.channels.cache.get('843377572448567333');
-    welcomeChannel.send('test diterima');
+    message.channel.send('Test diterima');
   }
 }

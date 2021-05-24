@@ -47,6 +47,6 @@ module.exports = class GuildMemberAddEvent extends BaseEvent {
     context.drawImage(avatar, canvas.width / 2.485, 70, 200, 200);
 
     const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.jpg');
-    welcomeChannel.send(`Welcome`, attachment);
+    welcomeChannel.send(`Mohon dibaca Rules dan Informasi yang terkait`, attachment);
   }
 }
